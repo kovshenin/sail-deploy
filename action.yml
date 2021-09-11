@@ -22,3 +22,4 @@ runs:
     - run: echo ${{ inputs.encrypted_filename}}
       shell: bash
     - run: sail --version
+      shell: bash
