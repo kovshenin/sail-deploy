@@ -10,3 +10,6 @@ runs:
   using: 'composite'
   steps:
     - run: echo ${{ inputs.passphrase }}
+      shell: bash
+    - run: echo ${{ inputs.encrypted_filename}}
+      shell: bash
