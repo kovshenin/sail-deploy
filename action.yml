@@ -1,0 +1,12 @@
+name: 'Sail Deploy'
+description: 'Deploy your site to DigitalOcean via Sail'
+inputs:
+  passphrase:
+    description: 'The GPG passphrase used to encrypt the .sail archive'
+  encrypted_filename:
+    description: 'The .sail encrypted archive filename, usually .sail.tar.gz.gpg'
+    default: '.sail.tar.gz.gpg'
+runs:
+  using: 'composite'
+  steps:
+    - run: echo ${{ inputs.passphrase }}
